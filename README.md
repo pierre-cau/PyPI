@@ -59,7 +59,7 @@ The library aims both to be an **instrument for research and development** in th
 - [ ] 🛠️ 02 *How to create a network by hand from scratch*
 - [ ] 📁 03 *How to import an existing network from a file*
 - [ ] ⚡ 04 *How to run a load flow analysis*
-- [x] 👀 05 *How to visualize a network*
+- [x] 👀 [05 *How to visualize a network*](code/notebooks/05__Visualizing_networks.ipynb)
 - [ ] 💾 06 *How to export a network to a file*
 
 
