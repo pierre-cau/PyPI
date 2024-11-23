@@ -47,6 +47,7 @@ The library aims both to be an **instrument for research and development** in th
 
 ### Growing Interest in PowSyBl
 
+> [!NOTE]
 > In recent years, the enthusiasm around **PowSyBl** has grown significantly. It is now not only used industrially by RTE but also by **new academic players**, other Transmission System Operators (**TSOs**), and even **Regional Coordination Centers** like **CORESO**. Learning to use such a library is therefore **very instructive** on a personal level for understanding how to model the behavior of an electrical network, and it also provides a **real added value for working** in this field.
 
 ### What will you learn in this tutorial?
@@ -54,17 +55,17 @@ The library aims both to be an **instrument for research and development** in th
 
 #### In this tutorial, we will cover really the bascis of PyPI namely:
 
-- [x] 📊 01 *How is modeled a network in PowSyBl*
-- [x] 🛠️ 02 *How to create a network by hand from scratch*
-- [x] 📁 03 *How to import an existing network from a file*
-- [x] ⚡ 04 *How to run a load flow analysis*
+- [] 📊 01 *How is modeled a network in PowSyBl*
+- [] 🛠️ 02 *How to create a network by hand from scratch*
+- [] 📁 03 *How to import an existing network from a file*
+- [] ⚡ 04 *How to run a load flow analysis*
 - [x] 👀 05 *How to visualize a network*
-- [x] 💾 06 *How to export a network to a file*
+- [] 💾 06 *How to export a network to a file*
 
 
 
-
-> ::info:: Please note that **PyPI** and **PowSyBl** are **very powerful tools** for ensuring the security of the electrical grid and its operation. **I plan to write a more advanced tutorial for `PyPI` in the future and also one for the Java library**. Nonetheless, if you are eager to learn more about PyPI, its full documentation made with Sphinx can be found [here](https://powsybl.readthedocs.io/projects/pypowsybl/en/stable/). This documentation is very well written and lets you know a wide range of possibilities that you can achieve with PyPI.
+> [!TIP]
+> Please note that **PyPI** and **PowSyBl** are **very powerful tools** for ensuring the security of the electrical grid and its operation. **I plan to write a more advanced tutorial for `PyPI` in the future and also one for the Java library**. Nonetheless, if you are eager to learn more about PyPI, its full documentation made with Sphinx can be found [here](https://powsybl.readthedocs.io/projects/pypowsybl/en/stable/). This documentation is very well written and lets you know a wide range of possibilities that you can achieve with PyPI.
 
 
 
@@ -85,17 +86,41 @@ Once done, you can upgrade `pip` by running the following command:
 pip install --upgrade setuptools pip
 ```
 
-Then, you can install the required packages by running the following command:
+Then, you can install all the required packages by running the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+If you want to install specifically `PyPI`, you can run the following command:
+
+```bash
+pip install pypowsybl
+```
+
+
+>[!TIP]
+>If you are using a **virtual environment**, you can create one by running the following command:
+>
+>```bash
+>python -m venv venv
+>```
+>
+>Then, you can activate the virtual environment by running >the following command:
+>
+>```bash
+>source venv/bin/activate
+>```
+>
+>Once done, you can install all the required packages.
+
+
 ## License 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-> ::Important:: Please note that PyPowSyBl is under an MPL 2.0 license. Please refer to the [official documentation](https://powsybl.readthedocs.io/projects/pypowsybl/en/stable/) for more information.
+> [!WARNING]
+> Please note that PyPowSyBl is under an MPL 2.0 license. Please refer to the [official documentation](https://powsybl.readthedocs.io/projects/pypowsybl/en/stable/) for more information.
 
 ## Author
 
