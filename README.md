@@ -30,11 +30,11 @@ ___
 
 #### This repository is a tutorial for really beginners who want to learn how to use PowSyBl library in Python.
 
-<div background-color="lightblue">
-    <h4 align="center">Used by...
+<div style="background-color: lightblue; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); color: black;">
+    <h4 align="center"><b>Used by...</b></h4>
     <p align="center">
-        <img src="assets/img/RTE_Logotype_externe_RVB_Bleu.png" alt="RTE Logo" height="80" padding=10/>
-        <img src="assets/img/logo-coreso-pos.png" alt="CORESO Logo" height="80" padding=10/>
+        <img src="assets/img/RTE_Logotype_externe_RVB_Bleu.png" alt="RTE Logo" height="50px" style="margin: 10px;"/>
+        <img src="assets/img/logo-coreso-pos.png" alt="CORESO Logo" height="50px" style="margin: 10px;"/>
     </p>
 </div>
 
