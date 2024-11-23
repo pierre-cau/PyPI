@@ -55,7 +55,7 @@ The library aims both to be an **instrument for research and development** in th
 
 #### In this tutorial, we will cover really the bascis of PyPI namely:
 
-- [ ] 📊 01 *How is modeled a network in PowSyBl*
+- [x] 📊 [01 *How is modeled a network in PowSyBl*](code\notebooks\01__Modeling_networks_in_powsybl.md)
 - [ ] 🛠️ 02 *How to create a network by hand from scratch*
 - [ ] 📁 03 *How to import an existing network from a file*
 - [ ] ⚡ 04 *How to run a load flow analysis*
