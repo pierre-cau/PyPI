@@ -11,7 +11,7 @@ Before diving into the modeling of a network in PowSyBl, let's first understand 
 <summary><b>DC Line</b></summary>
 <br>
 
-A DC line is a transmission line that carries direct current (**DC**) electricity at high voltage. Since the current war (end of the 19th century), the network is mainly composed of AC lines. However, DC lines are becoming more and more popular because they are more efficient for long-distance transmission (reducing the losses), connecting asynchronous grids or offshore wind farms to the main grid.
+*A DC line is a transmission line that carries direct current (**DC**) electricity at high voltage. Since the current war (end of the 19th century), the network is mainly composed of AC lines. However, DC lines are becoming more and more popular because they are more efficient for long-distance transmission (reducing the losses), connecting asynchronous grids or offshore wind farms to the main grid.*
 
 <br>
 </details>
@@ -21,7 +21,7 @@ A DC line is a transmission line that carries direct current (**DC**) electricit
 <summary><b>AC Line</b></summary>
 <br>
 
-An AC line is a transmission line that carries alternating current (**AC**) electricity at high voltage.
+*An AC line is a transmission line that carries alternating current (**AC**) electricity at high voltage.*
 
 <br>
 </details>
@@ -30,7 +30,7 @@ An AC line is a transmission line that carries alternating current (**AC**) elec
 <summary><b>Tie Line</b></summary>
 <br>
 
-A tie line is a transmission line that connects two different areas of the network. It is used to exchange power between these two areas. In reality, a tie line can be an AC line or a DC line depending on the distance between the two areas. Nonetheless, in PowSyBl, a tie line is always represented as an AC line otherwise we would talk about a "**HVDC Line**" (**H**igh **V**oltage **D**irect **C**urrent **L**ine). Moreover, even if in real life, we mainly talk about a tie line to exchange electricity between two countries, in PowSyBl, a tie line can be used to exchange power between two bidding zones.
+*A tie line is a transmission line that connects two different areas of the network. It is used to exchange power between these two areas. In reality, a tie line can be an AC line or a DC line depending on the distance between the two areas. Nonetheless, in PowSyBl, a tie line is always represented as an AC line otherwise we would talk about a "**HVDC Line**" (**H**igh **V**oltage **D**irect **C**urrent **L**ine). Moreover, even if in real life, we mainly talk about a tie line to exchange electricity between two countries, in PowSyBl, a tie line can be used to exchange power between two bidding zones.*
 
 <br>
 </details>
@@ -39,7 +39,7 @@ A tie line is a transmission line that connects two different areas of the netwo
 <summary><b>Transformer</b></summary>
 <br>
 
-A transformer is a **static electrical device** that transfers electrical energy between two or more circuits through electromagnetic induction. A varying current in **one coil of the transformer produces a varying magnetic flux**, which, in turn, induces a varying electromotive force across a second coil wound around the same core. This way, transformers are used to increase or decrease the voltage of an AC line.
+*A transformer is a ***static electrical device*** that transfers electrical energy between two or more circuits through electromagnetic induction. A varying current in ***one coil of the transformer produces a varying magnetic flux***, which, in turn, induces a varying electromotive force across a second coil wound around the same core. This way, transformers are used to increase or decrease the voltage of an AC line.*
 
 <br>
 </details>
@@ -48,7 +48,7 @@ A transformer is a **static electrical device** that transfers electrical energy
 <summary><b>Busbar</b></summary>
 <br>
 
-A busbar is a metallic strip or bar, typically housed inside switchgear, panel boards, and busway enclosures for local high current power distribution. In PowSyBl, a busbar is used to represent a connection point in the network where several components are connected to each other.
+*A busbar is a metallic strip or bar, typically housed inside switchgear, panel boards, and busway enclosures for local high current power distribution. In PowSyBl, a busbar is used to represent a connection point in the network where several components are connected to each other.*
 
 <br>
 </details>
@@ -57,7 +57,7 @@ A busbar is a metallic strip or bar, typically housed inside switchgear, panel b
 <summary><b>Breaker</b></summary>
 <br>
 
-A circuit breaker is an automatically operated electrical switch designed to protect an electrical circuit from damage caused by an overload or a short circuit. In PowSyBl, a breaker is used to represent a switch that can be opened or closed to connect or disconnect two components in the network. In real life, a breaker can be opened or closed both manually or automatically under load conditions.
+*A circuit breaker is an automatically operated electrical switch designed to protect an electrical circuit from damage caused by an overload or a short circuit. In PowSyBl, a breaker is used to represent a switch that can be opened or closed to connect or disconnect two components in the network. In real life, a breaker can be opened or closed both manually or automatically under load conditions.*
 
 <br>
 </details>
@@ -66,7 +66,7 @@ A circuit breaker is an automatically operated electrical switch designed to pro
 <summary><b>Disconnector/Switch</b></summary>
 <br>
 
-A disconnector is an electrical switch that is used to isolate a part of the network. In PowSyBl, a disconnector is used to represent a switch that can be opened or closed to isolate a part of the network. The main difference between a breaker and a disconnector is that a disconnector is not designed to be opened or closed under load conditions since there would be a risk of creating an electric arc. Indeed, while a breaker is designed to interrupt significant currents and positioned upstream to protect a section of the network, a disconnector is positioned alongside the breaker and is used to isolate the section of the network that is protected by the braker (for maintenance purposes for example).
+*A disconnector is an electrical switch that is used to isolate a part of the network. In PowSyBl, a disconnector is used to represent a switch that can be opened or closed to isolate a part of the network. The main difference between a breaker and a disconnector is that a disconnector is not designed to be opened or closed under load conditions since there would be a risk of creating an electric arc. Indeed, while a breaker is designed to interrupt significant currents and positioned upstream to protect a section of the network, a disconnector is positioned alongside the breaker and is used to isolate the section of the network that is protected by the braker (for maintenance purposes for example).*
 
 <br>
 </details>
@@ -75,7 +75,7 @@ A disconnector is an electrical switch that is used to isolate a part of the net
 <summary><b>Generator</b></summary>
 <br>
 
-A generator is a device that converts mechanical energy into electrical energy. In PowSyBl, a generator is used to represent a power plant that produces electricity. A generator is connected to the network through a transformer and a breaker.
+*A generator is a device that converts mechanical energy into electrical energy. In PowSyBl, a generator is used to represent a power plant that produces electricity. A generator is connected to the network through a transformer and a breaker.*
 
 <br>
 </details>
@@ -84,7 +84,7 @@ A generator is a device that converts mechanical energy into electrical energy. 
 <summary><b>Load</b></summary>
 <br>
 
-A load is an electrical device that consumes electrical energy. In PowSyBl, a load is used to represent a consumer that consumes electricity. A load is connected to the network through a breaker. Please note that the difference between a load and a generator in pypowsybl is really related to the direction of the power flow. A generator produces electricity and injects it into the network while a load consumes electricity from the network.
+*A load is an electrical device that consumes electrical energy. In PowSyBl, a load is used to represent a consumer that consumes electricity. A load is connected to the network through a breaker. Please note that the difference between a load and a generator in pypowsybl is really related to the direction of the power flow. A generator produces electricity and injects it into the network while a load consumes electricity from the network.*
 
 <br>
 </details>
@@ -93,7 +93,7 @@ A load is an electrical device that consumes electrical energy. In PowSyBl, a lo
 <summary><b>Shunt</b></summary>
 <br>
 
-A shunt is a device that is used to regulate the voltage in the network. In PowSyBl, a shunt is used to represent a device that can be connected or disconnected to the network to regulate the voltage. A shunt is connected to the network through a breaker.
+*A shunt is a device that is used to regulate the voltage in the network. In PowSyBl, a shunt is used to represent a device that can be connected or disconnected to the network to regulate the voltage. A shunt is connected to the network through a breaker.*
 
 <br>
 </details>
@@ -102,7 +102,7 @@ A shunt is a device that is used to regulate the voltage in the network. In PowS
 <summary><b>Battery</b></summary>
 <br>
 
-A battery is a device that stores electrical energy. In PowSyBl, a battery is used to represent a device that can store electricity. A battery is connected to the network through a transformer and a breaker.
+*A battery is a device that stores electrical energy. In PowSyBl, a battery is used to represent a device that can store electricity. A battery is connected to the network through a transformer and a breaker.*
 
 <br>
 </details>
@@ -111,7 +111,7 @@ A battery is a device that stores electrical energy. In PowSyBl, a battery is us
 <summary><b>Dangling Line</b></summary>
 <br>
 
-A dangling line is a line that **is not connected to any other component in the network**.This can be useful to represent a line that is not yet connected to the network or a line that has been disconnected from the network. It is quite common to use two dangling lines to represent a tie line since two **TSOs may manage differently the same tie line**.
+*A dangling line is a line that ***is not connected to any other component in the network***.This can be useful to represent a line that is not yet connected to the network or a line that has been disconnected from the network. It is quite common to use two dangling lines to represent a tie line since two ***TSOs may manage differently the same tie line***.*
 
 <br>
 </details>
