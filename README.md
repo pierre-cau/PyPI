@@ -55,16 +55,16 @@ The library aims both to be an **instrument for research and development** in th
 
 #### In this tutorial, we will cover really the bascis of PyPI namely:
 
-- [] 📊 01 *How is modeled a network in PowSyBl*
-- [] 🛠️ 02 *How to create a network by hand from scratch*
-- [] 📁 03 *How to import an existing network from a file*
-- [] ⚡ 04 *How to run a load flow analysis*
+- [ ] 📊 01 *How is modeled a network in PowSyBl*
+- [ ] 🛠️ 02 *How to create a network by hand from scratch*
+- [ ] 📁 03 *How to import an existing network from a file*
+- [ ] ⚡ 04 *How to run a load flow analysis*
 - [x] 👀 05 *How to visualize a network*
-- [] 💾 06 *How to export a network to a file*
+- [ ] 💾 06 *How to export a network to a file*
 
 
 
-> [!TIP]
+> [!NOTE]
 > Please note that **PyPI** and **PowSyBl** are **very powerful tools** for ensuring the security of the electrical grid and its operation. **I plan to write a more advanced tutorial for `PyPI` in the future and also one for the Java library**. Nonetheless, if you are eager to learn more about PyPI, its full documentation made with Sphinx can be found [here](https://powsybl.readthedocs.io/projects/pypowsybl/en/stable/). This documentation is very well written and lets you know a wide range of possibilities that you can achieve with PyPI.
 
 
