@@ -39,10 +39,10 @@ Before diving into the modeling of a network in PowSyBl, let's first understand 
 <summary><b>Transformer</b></summary>
 <br>
 
-*A transformer is a ***static electrical device*** that transfers electrical energy between two or more circuits through electromagnetic induction. A varying current in ***one coil of the transformer produces a varying magnetic flux***, which, in turn, induces a varying electromotive force across a second coil wound around the same core. This way, transformers are used to increase or decrease the voltage of an AC line.*
+*A transformer is a ***static electrical device*** that transfers electrical energy between two or more circuits through electromagnetic induction. A varying current in ***one coil of the transformer produces a varying magnetic flux***, which, in turn, induces a varying electromotive force across a second coil wound around the same core. This way, transformers are used to increase or decrease the voltage of an AC line. In  pywposybl, a transformer may either be **2 windings** or **3 windings**.*
 
 <br>
-</details>
+</details>  
 
 <details>
 <summary><b>Busbar</b></summary>
@@ -90,7 +90,7 @@ Before diving into the modeling of a network in PowSyBl, let's first understand 
 </details>
 
 <details>
-<summary><b>Shunt</b></summary>
+<summary><b>Shunt compensators</b></summary>
 <br>
 
 *A shunt is a device that is used to regulate the voltage in the network. In PowSyBl, a shunt is used to represent a device that can be connected or disconnected to the network to regulate the voltage. A shunt is connected to the network through a breaker.*
@@ -114,6 +114,23 @@ Before diving into the modeling of a network in PowSyBl, let's first understand 
 *A dangling line is a line that ***is not connected to any other component in the network***.This can be useful to represent a line that is not yet connected to the network or a line that has been disconnected from the network. It is quite common to use two dangling lines to represent a tie line since two ***TSOs may manage differently the same tie line***.*
 
 <br>
+</details>
+
+<details>
+<summary><b>Area</b></summary>
+<br>
+
+*An area is a theorical part of the network that is ***connected to the rest of the network through tie lines***. In PowSyBl, an area is used to represent a part of the network that is connected to the rest of the network through tie lines. An area is connected to the network through a breaker.*
+
+<br>
+</details>
+
+<details>
+<summary><b>Static Var compensators</b></summary>
+<br>
+
+*A static var compensator is a device that is used to regulate the reactive power in the network. In PowSyBl, a static var compensator is used to represent a device that can be connected or disconnected to the network to regulate the reactive power.*
+
 </details>
 
 ## How is modeled a network in PowSyBl ?
@@ -165,6 +182,38 @@ This approach is used for broader analyses such as **power flow studies**, **lon
 ### Diving into the code
 
 In PowSyBl, there is actually one class representing the network namely the `Network` class. Nonetheless this class contains as many attributes as the number of components as we have seen above. Each attribute is a dataframe that you can get or set to model the network using the getters and setters of the `Network` class. To know more about the `Network` class, you can check the [official documentation](https://powsybl.readthedocs.io/projects/pypowsybl/en/stable/reference/network.html).
+
+
+<details><summary><b>All elements</b></summary>
+
+> [!TIP]
+>Here is the list of all the elements that can be modeled in PyPowSyBl:
+>
+>
+>- areas
+>- buses (from bus view)
+>- buses from bus/breaker view
+>- lines
+>- 2 windings transformers
+>- 3 windings transformers
+>- generators
+>- loads
+>- shunt compensators
+>- dangling lines
+>- LCC and VSC converters stations
+>- static var compensators
+>- switches
+>- voltage levels
+>- substations
+>- busbar sections
+>- HVDC lines
+>- ratio and phase tap changer steps associated to a 2 windings transformers
+>- identifiables that are all the equipment on the network
+>- injections
+>- branches (lines and two windings transformers)
+>- terminals are a practical view of those objects which are very important in the java implementation
+
+</details>
 
 
 > ## Now let's see how to create a network by hand from scratch...
