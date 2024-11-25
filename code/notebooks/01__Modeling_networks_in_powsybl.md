@@ -184,8 +184,6 @@ This approach is used for broader analyses such as **power flow studies**, **lon
 In PowSyBl, there is actually one class representing the network namely the `Network` class. Nonetheless this class contains as many attributes as the number of components as we have seen above. Each attribute is a dataframe that you can get or set to model the network using the getters and setters of the `Network` class. To know more about the `Network` class, you can check the [official documentation](https://powsybl.readthedocs.io/projects/pypowsybl/en/stable/reference/network.html).
 
 
-<details><summary><b>All elements</b></summary>
-
 >[!TIP]
 >Here is the list of all the elements that can be modeled in PyPowSyBl:
 >
@@ -212,8 +210,6 @@ In PowSyBl, there is actually one class representing the network namely the `Net
 >- injections
 >- branches (lines and two windings transformers)
 >- terminals are a practical view of those objects which are very important in the java implementation
-
-</details>
 
 
 > ## Now let's see how to create a network by hand from scratch...
