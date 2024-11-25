@@ -186,7 +186,7 @@ In PowSyBl, there is actually one class representing the network namely the `Net
 
 <details><summary><b>All elements</b></summary>
 
-> [!TIP]
+>[!TIP]
 >Here is the list of all the elements that can be modeled in PyPowSyBl:
 >
 >
