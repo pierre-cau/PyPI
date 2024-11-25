@@ -100,7 +100,7 @@ pip install pypowsybl
 
 
 >[!TIP]
->If you are using a **virtual environment**, you can create one by running the following command:
+>If you are not using a **virtual environment** yet, you can create one by running the following command:
 >
 >```bash
 >python -m venv venv
